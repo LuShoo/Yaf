@@ -1,0 +1,40 @@
+.navbar-inner {
+    min-height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #2c2c2c;
+    background-image: -moz-linear-gradient(top, #fff, #eee);
+    background-image: -ms-linear-gradient(top, #fff, #eee);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#eee));
+    background-image: -webkit-linear-gradient(top, #fff, #eee);
+    background-image: -o-linear-gradient(top, #333, #222);
+    background-image: linear-gradient(top, #333, #222);
+    background-repeat: repeat-x;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1)
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #bbb;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    padding: 9px 10px 11px;
+    line-height: 19px;
+    color: #666;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .nav > li > a:hover {
+    font-weight: bold;
+    color: #000;
+}

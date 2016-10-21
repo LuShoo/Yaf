@@ -1,0 +1,1 @@
+<?php TZ_Loader::service('Menu','Admin')->disMenu();?>

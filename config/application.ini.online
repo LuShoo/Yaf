@@ -1,0 +1,75 @@
+[product]
+
+;common config
+application.ext        						=	'php'
+application.directory						=	APP_PATH "/application"
+application.library							=	APP_PATH "/application/library"
+application.bootstrap						=	APP_PATH "/application/Bootstrap.php"
+application.cache_config					=	1
+application.baseUri 						=	"/3"	
+application.view.ext						=	'phtml'
+application.modules                                             =       'Index,Admin,Api,Ad,Card,Custom,Provider,Corp'
+application.dispatcher.defaultModul             =   'Index'
+application.dispatcher.defaultController  	= 	'index'
+application.dispatcher.defaultAction 		= 	'index'
+
+;error information config
+application.dispatcher.throwException		=	1
+application.dispatcher.catchException		=	1	
+;system config
+application.system.display_errors		=	0
+application.system.error_reporting		=	1
+
+library.path                                =   APP_PATH "/application/library" 
+;static service config
+static.server								=	"/static"
+cookie.key								=	'9w3^!da4'
+
+;数据库
+database.xiubao_system_db.driver                      = 'MYSQL'
+database.xiubao_system_db.master.host                 = '10.0.3.51'
+database.xiubao_system_db.master.port                 = '3306'
+database.xiubao_system_db.master.username             = 'hmlink'
+database.xiubao_system_db.master.password             = '2Aq3zdkmx+Ie'
+database.xiubao_system_db.master.default              = 'xiubao_system_db'
+database.xiubao_system_db.master.charset              = 'UTF8'
+
+
+database.xiubao_device_center_db.driver                      = 'MYSQL'
+database.xiubao_device_center_db.master.host                 = '10.0.3.51'
+database.xiubao_device_center_db.master.port                 = '3306'
+database.xiubao_device_center_db.master.username             = 'hmlink'
+database.xiubao_device_center_db.master.password             = '2Aq3zdkmx+Ie'
+database.xiubao_device_center_db.master.default              = 'xiubao_device_center_db'
+database.xiubao_device_center_db.master.charset              = 'UTF8'
+
+
+
+;redis
+redis.user.host                             =	'10.0.3.21'
+redis.user.port                             =	6381
+
+;redis
+redis.recharge.host                             =	'10.0.3.21'
+redis.recharge.port                             =	6379
+
+;充值计划回调地址
+recharge.plan.notifyurl                ='http://10.0.3.21:8015/recharge/plan/notify'
+
+;xlsx upload path
+upload.xlsx.path                             =   '/data/web/pic/xlsx/'
+
+;流量相关接口
+user.payflow.url                = 'http://flow.heimilink.com'
+
+
+;流量充值服务中心
+flow.recharge.url               = 'http://10.0.3.21:8011/niu/recharge/index'
+
+;微信登录地址
+weixin.login                = 'http://flow.heimilink.com'
+;微信消息api地址
+weixin.api                   = "http://mns.heimilink.com"
+;微信模板
+;实名认证结果通知
+weixin.identify.temp_id      = "NilmMKAJIyg5skTX88vAsuzOibvhGRcUeQGBc7eRPJw"

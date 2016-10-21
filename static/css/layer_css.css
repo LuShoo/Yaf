@@ -1,0 +1,26 @@
+body {
+    color: #868686;
+    background: #f7f7f7 url("/static/img/body-bg.png") !important;
+}
+
+input {
+    width: 150px;;
+}
+
+#clerkInfo {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#clerkInfoIn {
+    font-weight: bolder;
+    font-size: 15px;
+    border: transparent;
+}
+
+#main-content {
+    margin-top: 0px;
+    margin-left: 0px;
+    min-height: 100%;
+    background: #f7f7f7 url("/static/img/body-bg.png");
+}

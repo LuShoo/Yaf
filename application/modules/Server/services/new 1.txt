@@ -1,0 +1,28 @@
+$('#start-upload').click(function() {
+            	var group = $('#devicegroup').val()
+				if ($(this).attr('upload-status') == '1')
+					return false;
+				if ($('#file').val() == '')
+					alert('请选择要上传的文件');
+				$(this).attr('upload-status', '1');
+				$('#upload-form').submit();
+				
+			});
+			
+			
+			
+			
+			
+			
+			
+			$('#start-upload').click(function() {
+            	var group = $('#devicegroup').val()
+				if ($(this).attr('upload-status') == '1')
+					return false;
+				if ($('#file').val() == '')
+					alert('请选择要上传的文件');
+				$(this).attr('upload-status', '1');
+				$('#upload-form').submit();
+				alert('导入成功');
+				window.location.href = "/device/device/index.html";
+			});
